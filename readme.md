@@ -6,7 +6,6 @@ Zephyr Cloud is a powerful application designed for managing cloud resources eff
 
 **Prerequisites:**
 
-* **Docker:** Ensure Docker is installed on your machine. You can download Docker Desktop from the official website.
 * **Node.js and npm:** Ensure Node.js and npm are installed on your machine. You can download them from the official Node.js website.
 
 **Installation:**
@@ -20,7 +19,7 @@ Zephyr Cloud is a powerful application designed for managing cloud resources eff
 2. Navigate to the project directory:
 
    ```bash
-   cd zephyr-electron
+   cd zephyr-cloud
    ```
 
 3. Install dependencies:
@@ -31,19 +30,6 @@ Zephyr Cloud is a powerful application designed for managing cloud resources eff
 
 **Building the Application:**
 
-**Building for All Platforms (Windows, macOS, Linux):**
-
-1. Ensure Docker is running.
-2. Run the Docker build script:
-
-   ```bash
-   npm run docker-build
-   ```
-
-This command will build the application for all three platforms using Docker.
-
-**Building for a Specific Platform:**
-
 **Building for Windows:**
 
 ```bash
@@ -52,13 +38,17 @@ npm run dist
 
 This command will build the application for Windows and create an installer in the `dist` directory.
 
-**Building for macOS or Linux:**
+**Building for macOS:**
 
-Unfortunately, building directly for macOS or Linux requires access to those specific operating systems. You can use the Docker method above to build for these platforms on Windows, or you can build them natively on their respective machines.
+**Unfortunately, building directly for macOS requires a macOS machine due to the limitations of Electron Builder. Consider alternative solutions like cloud build services that support macOS builds if cross-platform development is crucial.**
+
+**Building for Linux:**
+
+**While building directly for Linux is possible, it requires additional tools and dependencies that are not pre-installed on most systems. Refer to the Electron Builder documentation for specific instructions on building for Linux: [https://github.com/electron/electron](https://github.com/electron/electron)**
 
 **Running the Application:**
 
-After building the application, you can run it using the following command:
+After building the application for your specific platform, you can run it using the following command:
 
 ```bash
 npm start
@@ -73,4 +63,5 @@ Contributions are welcome! Please read the contributing guidelines before gettin
 **License:**
 
 Zephyr Cloud is licensed under the Thoq-License. See the license file for details.
---
+
+**Note:** Building for macOS and Linux requires special considerations. If cross-platform development without Docker is necessary, explore alternative solutions like cloud build services that support these platforms or consult the Electron Builder documentation for specific instructions.
