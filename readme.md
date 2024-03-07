@@ -61,7 +61,8 @@ This command will start the Electron application.
 
 ## Contributing
 
-Contributions are welcome! Please read the [](CONTRIBUTING.md) before getting started.
+At the moment if you want to contribute you must create a pull request and agree to the license
+```Contributions are welcome! Please read the [](CONTRIBUTING.md) before getting started.```
 
 ## License
 
