@@ -61,10 +61,10 @@ This command will start the Electron application.
 
 ## Contributing
 
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before getting started.
+Contributions are welcome! Please read the [](CONTRIBUTING.md) before getting started.
 
 ## License
 
-Zephyr Cloud is licensed under the Thoq-License. See the [LICENSE](LICENSE) file for details.
+Zephyr Cloud is licensed under the Thoq-License. See the [[LICENSE](https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License)https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License](LICENSE) file for details.
 
 ---
