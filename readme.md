@@ -40,11 +40,33 @@ This command will build the application for Windows and create an installer in t
 
 **Building for macOS:**
 
-**Unfortunately, building directly for macOS requires a macOS machine due to the limitations of Electron Builder. Consider alternative solutions like cloud build services that support macOS builds if cross-platform development is crucial.**
+```bash
+npm run build:mac
+```
+
+**Note:** This assumes you have added the following script to your `package.json` file:
+
+```json
+"scripts": {
+  // ... other scripts
+  "build:mac": "electron-builder --mac"
+}
+```
 
 **Building for Linux:**
 
-**While building directly for Linux is possible, it requires additional tools and dependencies that are not pre-installed on most systems. Refer to the Electron Builder documentation for specific instructions on building for Linux: [https://github.com/electron/electron](https://github.com/electron/electron)**
+```bash
+npm run build:linux
+```
+
+**Note:** This assumes you have added the following script to your `package.json` file:
+
+```json
+"scripts": {
+  // ... other scripts
+  "build:linux": "electron-builder --linux"
+}
+```
 
 **Running the Application:**
 
@@ -64,4 +86,4 @@ Contributions are welcome! Please read the contributing guidelines before gettin
 
 Zephyr Cloud is licensed under the Thoq-License. See the license file for details.
 
-**Note:** Building for macOS and Linux requires special considerations. If cross-platform development without Docker is necessary, explore alternative solutions like cloud build services that support these platforms or consult the Electron Builder documentation for specific instructions.
+**Note:** Building for macOS requires a dedicated machine, while building for Linux requires additional configuration in your `package.json` file. If cross-platform development without Docker is necessary, explore alternative solutions like cloud build services that support these platforms.
