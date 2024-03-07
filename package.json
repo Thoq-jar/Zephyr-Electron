@@ -1,21 +1,45 @@
 {
-  "name": "zephyr-cloud",
-  "version": "3.6.24",
-  "description": "Nebula",
-  "main": "index.js",
-  "scripts": {
-     "start": "electron .",
-     "test": "echo \"Error: no test specified\" && exit 1",
-     "pack": "electron-builder --dir",
-     "dist": "electron-builder",
-     "docker-build": "docker run --rm -v ${PWD}:/project -w /project electronuserland/builder yarn && yarn dist"
-  },
-  "author": "Tristan",
-  "license": "Thoq-License https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License",
-  "devDependencies": {
-     "electron": "^29.1.0",
-     "electron-builder": "^24.13.3",
-     "mocha": "^10.3.0"
+   "name": "zephyr-cloud",
+   "version": "3.6.24",
+   "description": "Nebula",
+   "main": "index.js",
+   "scripts": {
+      "start": "electron .",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "pack": "electron-builder --dir",
+      "dist": "electron-builder",
+      "docker-build": "docker run --rm -v C:\\Users\\Tristan\\Documents\\Coding\\web development electon (extra pain)\\Zephyr Cloud:/project -w /project electronuserland/builder npm install; npm run dist",
+      "build": "electron-builder"
+   },
+   "build": {
+      "appId": "com.example.zephyrcloud",
+      "productName": "Zephyr Cloud",
+      "directories": {
+        "output": "dist"
+      },
+      "files": [
+        "dist/**/*",
+        "node_modules/**/*",
+        "package.json"
+      ],
+      "mac": {
+        "category": "public.app-category.developer-tools",
+        "target": "dmg"
+      },
+      "linux": {
+        "target": [
+          "AppImage",
+          "deb"
+        ],
+        "category": "Development"
+      }
+   },
+   "author": "Tristan",
+   "license": "Thoq-License https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License",
+   "devDependencies": {
+      "electron": "^29.1.0",
+      "electron-builder": "^24.13.3",
+      "mocha": "^10.3.0"
+   }
   }
- }
- 
+  
