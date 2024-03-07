@@ -20,7 +20,7 @@ Zephyr Cloud is a powerful application designed for managing cloud resources eff
 2. Navigate to the project directory:
 
    ```bash
-   cd zephyr-cloud
+   cd zephyr-electron
    ```
 
 3. Install dependencies:
