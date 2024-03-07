@@ -41,31 +41,14 @@ This command will build the application for Windows and create an installer in t
 **Building for macOS:**
 
 ```bash
-npm run build:mac
+npm run build
 ```
 
-**Note:** This assumes you have added the following script to your `package.json` file:
-
-```json
-"scripts": {
-  // ... other scripts
-  "build:mac": "electron-builder --mac"
-}
-```
 
 **Building for Linux:**
 
 ```bash
-npm run build:linux
-```
-
-**Note:** This assumes you have added the following script to your `package.json` file:
-
-```json
-"scripts": {
-  // ... other scripts
-  "build:linux": "electron-builder --linux"
-}
+npm run build
 ```
 
 **Running the Application:**
