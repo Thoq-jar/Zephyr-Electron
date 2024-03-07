@@ -65,6 +65,6 @@ Contributions are welcome! Please read the [](CONTRIBUTING.md) before getting st
 
 ## License
 
-Zephyr Cloud is licensed under the Thoq-License. See the [[LICENSE](https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License)https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License](LICENSE) file for details.
+Zephyr Cloud is licensed under the Thoq-License. See the [LICENSE](https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License) file for details.
 
 ---
